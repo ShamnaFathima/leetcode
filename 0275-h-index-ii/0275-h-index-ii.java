@@ -5,14 +5,14 @@ public class Solution {
         
         while (left <= right) {
             int mid = left + (right - left) / 2;
-            int papers = n - mid;  // number of papers with >= citations[mid]
+            int papers = n - mid; 
             
             if (citations[mid] == papers) {
-                return papers;  // exact match
+                return papers;  
             } else if (citations[mid] < papers) {
-                left = mid + 1;  // need more citations
+                left = mid + 1; 
             } else {
-                right = mid - 1; // too many citations
+                right = mid - 1; 
             }
         }
         return n - left;
