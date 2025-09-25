@@ -1,7 +1,7 @@
 class Solution {
     public boolean checkIfPangram(String sentence) {
-        for (char ch = 'a'; ch <= 'z'; ch++) {
-            if (sentence.indexOf(ch) == -1) {
+        for (char c = 'a'; c<= 'z'; c++) {
+            if (sentence.indexOf(c) == -1) {
                 return false;
             }
         }
